@@ -1,0 +1,20 @@
+.breadcrumbs
+    margin: 20px 0 30px
+
+    &__list
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+
+    &__item
+        margin: 0 12px 4px 0
+
+        &-link
+            text: #030A1B 500 16px 1.1
+
+        &--current
+            ^&-link
+                text: #A7A9AF
+                pointer-events: none

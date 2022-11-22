@@ -1,0 +1,122 @@
+.btns-spacer
+  display: flex
+  flex-wrap: wrap
+
+  & > *
+    margin: 0 16px 0 0
+
+    &:last-child
+      margin: 0
+
+.form
+  &__send
+    margin: 48px 0 0
+
+.input
+  margin: 20px 0 @md 40px 0
+  position: relative
+
+  &__label
+    font-family: $font
+    text: #B3B3B3 400 11px 1.3 @sm 14px @lg 21px
+    margin: 0 0 4px
+
+  &__elem
+    position: relative
+    font-family: $font
+    text: #030A1B 500 16px 1.3
+    min-height: 48px
+    background: #fff
+    border: 1px solid #E9EDF1
+    border-radius: 10px
+    padding: 0 16px
+    outline: 0
+    width: 100%
+    resize: none
+
+    &::placeholder
+      color: #A7A9AF
+
+  &__file
+    &-preview
+      display: flex
+      align-items: center
+      justify-content: center
+      
+      img
+        size: 28px
+        min-width: 28px
+        margin: 0 10px 0 0
+
+      p
+        text: #030A1B 500 14px 1.1
+        margin: 0
+
+  &__checkbox
+    display: none
+
+    &:checked
+
+      & + ^&-label
+        &:before
+          background-image: resolve("icons/checkbox-checked.svg") 
+
+    &-label
+      cursor: pointer
+      user-select: none
+      font-family: $font
+      text: #263238 300 16px 1.2 @md 24px @lg 30px
+      display: block
+
+      &:before
+        content: ""
+        display: block
+        size: 24px
+        min-width: 24px
+        margin: 0 16px 0 0
+        position: relative
+        background-image: resolve("icons/checkbox.svg")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain 
+
+  &__radio
+    display: none
+
+    &-label-bg
+      cursor: pointer
+      user-select: none
+      font-family: $font
+      text: #4F545F 500 14px @md 16px
+      line-height: unset
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      min-height: 40px @md 48px
+      border-radius: 10px
+      border: 1px solid #E9EDF1
+      width: 100%
+
+  &--error
+    ^&__radio-label-bg
+      color: #fff
+      background: #EB5757
+      border-color: #EB5757
+
+  &--success
+    ^&__radio-label-bg
+      color: #fff
+      background: #27AE60
+      border-color: #27AE60
+
+textarea.input__elem
+  min-height: 180px
+  padding: 16px *
+
+select.input__elem
+  appearance: none
+  background: #fff resolve("icons/chevron-tiny-down.svg") no-repeat calc(100% - 16px) center / 24px
+
+  option[disabled]
+    display: none

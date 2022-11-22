@@ -1,0 +1,63 @@
+section.main-courses
+    .tabs
+        .tabs__nav
+            ul.tabs__nav-list
+                li.tabs__nav-item.tabs__nav-item--active(data-active-tab="tab_1")
+                    button.btn.btn--reset.tabs__nav-btn(aria-label="Button tab") Взрослым
+
+                li.tabs__nav-item(data-active-tab="tab_2")
+                    button.btn.btn--reset.tabs__nav-btn(aria-label="Button tab") Детям и подросткам
+
+        .tabs__content.tabs__content--open(data-tab="tab_1")
+            .main-courses__head
+                h2.main-courses__title Взрослым
+
+            .main-courses__list
+                .main-courses__col
+                    .main-courses__col--body
+                        .main-courses__col-img--wrap
+                            img.main-courses__col-img(src="img/content/main-courses/Intermediate - B1.webp" width="625" height="320" alt="Название курса")
+
+                        .main-courses__col-info
+                            .main-courses__col-title Intermediate - B1
+
+                            .btn--block
+                                a.btn.btn--wide.btn--accent(href="#") Записаться
+
+                .main-courses__col
+                    .main-courses__col--body
+                        .main-courses__col-img--wrap
+                            img.main-courses__col-img(src="img/content/main-courses/Upper Intermediate - B2.webp" width="625" height="320" alt="Название курса")
+
+                        .main-courses__col-info
+                            .main-courses__col-title Upper Intermediate - B2
+
+                            .btn--block
+                                a.btn.btn--wide.btn--accent(href="#") Записаться
+
+        .tabs__content(data-tab="tab_2")
+            .main-courses__head
+                h2.main-courses__title Детям и подросткам
+
+            .main-courses__list
+                .main-courses__col
+                    .main-courses__col--body
+                        .main-courses__col-img--wrap
+                            img.main-courses__col-img(src="img/content/main-courses/trial-course.webp" width="625" height="320" alt="Название курса")
+
+                        .main-courses__col-info
+                            .main-courses__col-title Пробный курс
+
+                            .btn--block
+                                a.btn.btn--wide.btn--accent(href="#") Записаться
+
+                .main-courses__col
+                    .main-courses__col--body
+                        .main-courses__col-img--wrap
+                            img.main-courses__col-img(src="img/content/main-courses/Starter - A0.webp" width="625" height="320" alt="Название курса")
+
+                        .main-courses__col-info
+                            .main-courses__col-title Startet - А0
+
+                            .btn--block
+                                a.btn.btn--wide.btn--accent(href="#") Записаться

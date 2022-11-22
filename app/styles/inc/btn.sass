@@ -1,0 +1,165 @@
+.btn
+  font-family: $font
+  text: #000 600 16px @sm 18px
+  line-height: unset
+  position: relative
+  text-decoration: none
+  background: transparent
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 0 16px
+  min-height: 48px @md 60px
+  transition: .2s ease
+  border-radius: 10px
+  transition: 0
+  outline: 0
+  cursor: pointer
+  user-select: none
+  white-space: nowrap
+
+  &--reset
+    margin: 0
+    padding: 0
+    outline: 0
+    border: 0
+    min-height: 1px @md 1px
+    background: transparent
+    cursor: pointer
+
+  &--tiny
+    min-height: 32px @md 32px
+
+  &--small
+    min-height: 40px @md 40px 
+
+  &--medium
+    min-height: 48px @md 48px
+
+  &--full
+    width: 100%
+
+  &--narrow
+    min-width: @md 190px
+
+  &--wide
+    min-width: @md 300px
+
+  &--broad
+    padding: 0 64px
+
+  &--block
+    display: flex
+
+  &--accent 
+    color: #fff
+    background-color: #2F80ED
+    border: 1px solid #2F80ED
+
+    &:hover
+      background-color: #0077FF
+      border-color: #0077FF 
+
+  &--border
+    color: #2F80ED
+    border: 1px solid #2F80ED
+
+    &:hover
+      color: #fff
+      background-color: #0077FF
+      border-color: #0077FF
+
+  &--secondary
+    color: #030A1B
+    background: #FFBC58
+
+  &--notice,
+  &--chevron-right,
+  &--play,
+  &--play-anim,
+  &--delete,
+  &--burger,
+  &--cross
+    &:before
+      content: ''
+      size: 48px
+      min-width: 48px
+      background-position: center
+      background-size: 24px
+      background-repeat: no-repeat
+
+  &--chevron-down
+    &:after
+      content: ''
+      size: 24px
+      min-width: 24px
+      background-position: center
+      background-size: 24px
+      background-repeat: no-repeat
+
+  &--notice
+    background-color: #F5F8FF
+    border-radius: 5px
+
+    &:before
+      background-image: resolve("icons/notice.svg")
+
+    &-active
+      &:after
+        content: ''
+        size: 8px
+        min-width: 8px
+        border-radius: 50%
+        background: #2F80ED
+        position: absolute 6px 6px null null
+
+  &--chevron-right
+    &:before
+      background-image: resolve("icons/chevron-right.svg")
+
+  &--play
+    background-color: #2F80ED 
+
+    &:before
+      background-image: resolve("icons/play-stroke.svg") 
+
+  &--play-anim
+    size: 96px @lg 146px
+    min-width: 96px @lg 146px
+
+    &:before
+      background-image: resolve("icons/play.svg")
+
+    &:after
+      content: ''
+      size: 100%
+      position: absolute
+      background: resolve("icons/btn-watch-video.svg") no-repeat center / contain
+      animation: 20s linear 0s infinite alternate rotatePlay
+      
+    &:hover
+      &:after
+        animation-play-state: paused
+
+  &--delete
+    border: 1px solid #E9EDF1
+
+    &:before
+      background-image: resolve("icons/delete.svg")
+
+  &--burger
+    background-color: #F5F8FF
+    border-radius: 5px
+
+    &:before
+      background-image: resolve("icons/burger.svg")
+
+  &--cross
+    &:before
+      background-image: resolve("icons/cross.svg")
+
+  &--chevron-down
+    &:after
+      background-image: resolve("icons/chevron-tiny-down.svg")
+  
+

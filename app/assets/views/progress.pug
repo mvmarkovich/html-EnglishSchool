@@ -1,0 +1,152 @@
+extends layouts/lk-layout.pug
+
+block title
+    title Статистика | EnglishSchool
+
+block content
+    .main-aside-container
+        .aside
+            .card
+                .card__head
+                    h5.card__title Общий прогресс по урокам
+
+                .card__body
+                    p.card__body-desc Всего часов на английском
+
+                    .card__progress
+                        .card__progress-info
+                            .card__progress-title 725
+                            .status.status--success.status--up 15.72 %
+
+                        .card__progress-bar
+                            .card__progress-bar-made(style="width:17%;background:#9B51E0")
+                            .card__progress-bar-made(style="width:17%;background:#2F80ED")
+                            .card__progress-bar-made(style="width:17%;background:#219653")
+                            .card__progress-bar-made(style="width:32%;background:#F2C94C")
+                            .card__progress-bar-made(style="width:17%;background:#EB5757")
+
+                        .card__legend
+                            .card__legend-item
+                                .card__legend-item-bg(style="background:#EB5757")
+                                .card__legend-item-title Курс C2
+
+                            .card__legend-item
+                                .card__legend-item-bg(style="background:#F2C94C")
+                                .card__legend-item-title Курс C1
+
+                            .card__legend-item
+                                .card__legend-item-bg(style="background:#219653")
+                                .card__legend-item-title Курс B2
+
+                            .card__legend-item
+                                .card__legend-item-bg(style="background:#2F80ED")
+                                .card__legend-item-title Курс B1
+
+                            .card__legend-item
+                                .card__legend-item-bg(style="background:#BB6BD9")
+                                .card__legend-item-title Курс Начальный
+
+                        .card__progress-footer
+                            p Правильные ответы
+                            span 500 из 800
+
+        .main-block
+            .progress
+                .progress__head
+                    h5.progress__title Общий прогресс по урокам
+
+                .progress__table
+                    table
+                        thead
+                            tr
+                                td Название курса
+                                td Прогресс
+                                td Статус
+                                td Правильные ответы
+                                td Всего минут
+
+                        tbody
+                            tr
+                                td
+                                    .short.short--user
+                                        img.short__img(src="img/content/avatars/messanger-user.webp" width="40" height="40" alt="")
+                                        | Курс A1
+
+                                td
+                                    .progress__value
+                                        p.progress__value-desc 53%
+
+                                        .progress__value-bar
+                                            .progress__value-bar-made(style="width:53%")
+
+                                td
+                                    .status.status--success Inprogress
+
+                                td 20 из 30
+                                td 1000 м 40 сек
+
+                            tr
+                                td
+                                    .short.short--user
+                                        img.short__img(src="img/content/avatars/messanger-user.webp" width="40" height="40" alt="")
+                                        | Курс A1
+
+                                td
+                                    .progress__value
+                                        p.progress__value-desc 0%
+
+                                        .progress__value-bar
+                                            .progress__value-bar-made(style="width:0%")
+
+                                td
+                                    .status.status--error Pending
+
+                                td 0 из 22
+                                td 0 
+
+                .progress__details
+                    .progress__details-item
+                        h5.progress__details-item-title Статистика за урок №1
+
+                        .progress__value
+                            .progress__value-title Общий прогресс по уроку
+
+                            .progress__value-bar
+                                .progress__value-bar-made(style="width:60%")
+
+                        ul
+                            li
+                                p 1000 м 40 сек
+                                span Колличество минут проведенных на английском
+
+                            li
+                                p 10 из 10
+                                span Правильные ответы
+
+                            li
+                                p 10
+                                span Пройденных тестов за урок
+
+                    .progress__details-item
+                        h5.progress__details-item-title Статистика за урок №1
+
+                        .progress__value
+                            .progress__value-title Общий прогресс по уроку
+
+                            .progress__value-bar
+                                .progress__value-bar-made(style="width:60%")
+
+                        ul
+                            li
+                                p 1000 м 40 сек
+                                span Колличество минут проведенных на английском
+
+                            li
+                                p 10 из 10
+                                span Правильные ответы
+
+                            li
+                                p 10
+                                span Пройденных тестов за урок                                    
+
+    include blocks/subscribe

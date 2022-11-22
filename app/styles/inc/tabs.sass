@@ -1,0 +1,42 @@
+.tabs
+    &__nav
+        padding: @md 0 60px @lg 0 100px
+
+        &-list
+            list-style: none
+            margin: 0
+            padding: 0
+
+            display: flex
+            flex-wrap: nowrap
+            align-items: flex-start
+
+        &-item
+            margin: 0 10px 0 0
+            width: @md-down 100%
+
+            &--active
+                ^^&-btn
+                    background: #F5F8FF
+
+            &:last-child
+                margin: * 0 * *
+
+        &-btn
+            background: #E9ECF2 
+            min-width: @md 190px
+            padding: 0 16px
+            min-height: 40px @md 48px
+            border-radius: 15px 15px 0 0
+            font-size: @md-down 16px
+            width: @md-down 100%
+
+    &__content
+        display: none
+        padding: 32px 24px @md 48px 60px 80px @lg 60px 100px 120px
+        background: #F5F8FF
+        border-radius: 0 0 20px 20px @md 20px
+        animation: fadeEffect .2s
+
+        &--open
+            display: block

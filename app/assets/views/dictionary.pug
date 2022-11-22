@@ -1,0 +1,225 @@
+extends layouts/lk-layout.pug
+
+block title
+    title Словарь | EnglishSchool
+
+block content
+    .main-block
+        .page-head
+            h1.main-title-small Словарь
+
+        section.dictionary
+            ul.dictionary__list
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") A
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") B
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") C
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") D
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") E
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") F
+
+                li.dictionary__item.dictionary__item--current
+                    a.dictionary__item-link(href="#") G
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") H
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") I
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") J
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") K
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") L
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") M
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") N
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") O
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") P
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") Q
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") R
+ 
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") S
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") T
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") U
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") V
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") W
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") X
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") Y
+
+                li.dictionary__item
+                    a.dictionary__item-link(href="#") Z
+
+            .accordion.accordion--lessons
+                .accordion__item.accordion__item-arrow
+                    button.btn.btn--reset.btn--chevron-down.accordion__item-toggle(aria-label="Button toggle") 
+                        span Курс A1
+                    
+                    .accordion__item-content
+                        .dictionary__section
+                            .test
+                                .test__body
+                                    .test__nav
+                                        .test__form
+                                            ul.test__nav-list
+                                                li.test__nav-item
+                                                    span.test__nav-item-title.test__nav-item--completed За урок №1
+
+                                                li.test__nav-item
+                                                    span.test__nav-item-title За урок №2
+
+                                                li.test__nav-item
+                                                    span.test__nav-item-title За урок №3
+
+
+                            .lesson__table.lesson__table-short
+                                table
+                                    thead
+                                        tr
+                                            td Русский
+                                            td Английский
+                                            td Видео
+
+                                    tbody
+                                        tr
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Слово")
+
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Word")
+
+                                            td
+                                                .input__file-preview
+                                                    img(src="img/content/lesson/video-preview.webp")
+                                                    p Видео.mp4
+
+                                        tr
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Собака")
+
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Dog")
+
+                                            td
+                                                .input__file-preview
+                                                    img(src="img/content/lesson/video-preview.webp")
+                                                    p Видео.mp4
+
+                                        tr
+                                            td 
+                                                input(type="text" placeholder="Введите слово")
+
+                                            td 
+                                                input(type="text" placeholder="Введите слово")
+
+                                            td
+                                                .input__file-preview
+                                                    img(src="img/content/lesson/video-preview.webp")
+                                                    p Видео.mp4
+
+                .accordion__item.accordion__item-arrow
+                    button.btn.btn--reset.btn--chevron-down.accordion__item-toggle(aria-label="Button toggle") 
+                        span Курс A2
+                    
+                    .accordion__item-content
+                        .dictionary__section
+                            .test
+                                .test__body
+                                    .test__nav
+                                        .test__form
+                                            ul.test__nav-list
+                                                li.test__nav-item
+                                                    span.test__nav-item-title.test__nav-item--completed За урок №1
+
+                                                li.test__nav-item
+                                                    span.test__nav-item-title За урок №2
+
+                                                li.test__nav-item
+                                                    span.test__nav-item-title За урок №3
+
+
+                            .lesson__table.lesson__table-short
+                                table
+                                    thead
+                                        tr
+                                            td Русский
+                                            td Английский
+                                            td Видео
+
+                                    tbody
+                                        tr
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Слово")
+
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Word")
+
+                                            td
+                                                .input__file-preview
+                                                    img(src="img/content/lesson/video-preview.webp")
+                                                    p Видео.mp4
+
+                                        tr
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Собака")
+
+                                            td 
+                                                input(type="text" placeholder="Введите слово" value="Dog")
+
+                                            td
+                                                .input__file-preview
+                                                    img(src="img/content/lesson/video-preview.webp")
+                                                    p Видео.mp4
+
+                                        tr
+                                            td 
+                                                input(type="text" placeholder="Введите слово")
+
+                                            td 
+                                                input(type="text" placeholder="Введите слово")
+
+                                            td
+                                                .input__file-preview
+                                                    img(src="img/content/lesson/video-preview.webp")
+                                                    p Видео.mp4
+
+        include blocks/subscribe
+

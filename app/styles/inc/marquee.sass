@@ -1,0 +1,28 @@
+.marquee 
+    position: relative
+    height: 70px @sm 90px @lg 120px
+
+    &__wrap
+        position: absolute
+        top: 0
+        bottom: 0
+        left: -16px @sm -768px
+        right: -16px @sm -768px
+        background: #F5F8FF
+
+    &__body
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        display: flex
+        flex-wrap: nowrap
+      
+        &-desc 
+            white-space: nowrap
+            font-family: $font-title
+            text: #030A1B 700 24px 1.3 @sm 28px @lg 35px
+            text-transform: uppercase
+            margin: 0
+            padding: 18px 16px @sm 30px * @lg 38px *
+      

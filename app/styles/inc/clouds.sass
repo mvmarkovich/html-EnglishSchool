@@ -1,0 +1,180 @@
+.clouds
+    size: 100%
+    z-index: -1
+    position: absolute 0 null null 0
+
+    &__col
+        background: resolve("icons/cloud.svg") no-repeat center / contain
+        position: absolute
+
+        &-title
+            color: #151528
+            font-weight: 600
+            line-height: 1.3
+            text-align: center
+
+    &--tariffs
+        position: @lg-down static
+        size: @lg-down auto
+        display: @lg-down flex
+        flex-wrap: @lg-down wrap
+
+        ^&__col
+            padding: * 16px @lg-down 16px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            position: @lg-down relative
+            background: @lg-down #fff
+            border: @lg-down 2px solid #3A0D1F
+            width: calc(50% - 16px) @sm calc(33.3% - 16px) @lg auto
+            margin: @lg-down 0 8px 16px
+            border-radius: @lg-down 10px
+            min-height: @lg-down 120px
+
+            &:after
+                content: ''
+                size: 28px 51px
+                background: resolve("icons/rhombus.svg") no-repeat center / contain
+                position: absolute
+                bottom: 0
+                display: @lg-down none
+
+            &:nth-child(1)
+                size: @lg 255px 224px
+                top: @lg 100px
+                left: @lg -10px @xl 50px
+                padding: @lg * 36px 48px
+                transform: @lg rotate(-5deg)
+
+                .comment__name
+                    text: 14px
+
+                .comment__desc
+                    text: 14px
+
+                &:after
+                    bottom: 34px
+                    left: 14px
+            
+            &:nth-child(2)
+                size: @lg 255px 224px
+                top: @lg 100px
+                right: @lg -10px @xl 50px
+                padding: @lg * 36px 48px
+                transform: @lg rotate(6deg)
+
+                .comment__name
+                    text: 14px
+
+                .comment__desc
+                    text: 14px
+
+                &:after
+                    bottom: 34px
+                    right: 14px
+
+            &:nth-child(3)
+                size: @lg 196px 172px
+                top: @lg 350px
+                left: @lg 50px
+                padding: @lg * 22px 32px
+                transform: @lg rotate(-38deg)
+
+                .comment__name
+                    text: 12px
+
+                .comment__desc
+                    text: 12px
+
+                &:after
+                    bottom: 34px
+                    left: 2px
+
+            &:nth-child(4)
+                size: @lg 196px 172px
+                top: @lg 350px
+                right: @lg 50px
+                padding: @lg * 22px 32px
+                transform: @lg rotate(37deg)
+
+                ^^&-title
+                    text: 18px
+
+                &:after
+                    bottom: 34px
+                    right: -1px
+
+            &:nth-child(5)
+                size: @lg 196px 172px
+                top: @lg 560px
+                left: @lg 30px @xl 140px
+                padding: @lg * 22px 32px
+                transform: @lg rotate(-27deg)
+
+                ^^&-title
+                    text: 16px
+
+                &:after
+                    bottom: 24px
+                    right: 30px
+
+            &:nth-child(6)
+                size: @lg 196px 172px
+                top: @lg 560px
+                right: @lg 30px @xl 140px
+                padding: @lg * 22px 32px
+                transform: @lg rotate(25deg)
+
+                ^^&-title
+                    text: 16px
+
+                &:after
+                    bottom: 24px
+                    left: 30px
+
+            &:nth-child(7)
+                size: @lg 143px 126px
+                top: @lg 810px
+                left: @lg 70px @xl 130px
+                padding: @lg * 16px 24px
+                transform: @lg rotate(-5.2deg)
+
+                ^^&-title
+                    text: 16px
+
+                &:after
+                    display: none
+
+            &:nth-child(8)
+                size: @lg 143px 126px
+                top: @lg 810px
+                right: @lg 70px @xl 130px
+                padding: @lg * 16px 24px
+                transform: @lg rotate(5.2deg)
+
+                ^^&-title
+                    text: 16px
+
+                &:after
+                    display: none
+
+.comment
+    &__name
+        color: #151528
+
+    &__desc
+        color: #4F545F
+        font-weight: 500
+        line-height: 1.1
+                
+.rating
+    size: 90px 14px
+    min-width: 90px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    margin: 4px 0
+
+    &-5
+        background-image: resolve("icons/rating/rating-5.svg")  

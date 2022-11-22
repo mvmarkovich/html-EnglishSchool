@@ -1,0 +1,52 @@
+extends layouts/lk-layout.pug
+
+block title
+    title ЛК уведомления | EnglishSchool
+
+block content
+    .main-block
+        .page-head
+            .page-head__control
+                ul.page-head__control-list
+                    li.page-head__control-item.page-head__control-item--current
+                        a.page-head__control-link(href="lk-notices.html") Уведомления
+
+                    li.page-head__control-item
+                        a.page-head__control-link(href="lk-messenger.html") Сообщения
+
+        section
+            .accordion.accordion--bg
+                .accordion__item.accordion__item-arrow.accordion__item--disabled
+                    button.btn.btn--reset.btn--chevron-down.accordion__item-toggle(aria-label="Button toggle") 
+                        span Кешмар на Holloweek
+                    
+                    .accordion__item-content
+                        p.accordion__content-desc Разыгрываем 30 денежных призов от М.Видео за покупки с кешбэком с 17 октября по 3 ноября!
+
+                .accordion__item.accordion__item-arrow
+                    button.btn.btn--reset.btn--chevron-down.accordion__item-toggle(aria-label="Button toggle") 
+                        .status__row
+                            .status.status--reset 17.10.2022
+                            .status.status--reset 13:00
+
+                        span Есть бесконтакт!
+                    
+                    .accordion__item-content
+                        p.accordion__content-desc Выпустите вирутальную карту QIWI Мир
+                
+                .accordion__item.accordion__item-arrow
+                    button.btn.btn--reset.btn--chevron-down.accordion__item-toggle(aria-label="Button toggle") 
+                        .status__row
+                            .status.status--reset 17.10.2022
+                            .status.status--reset 13:00
+
+                        span Оплачивайте покупки телефоном
+                    
+                    .accordion__item-content
+                        p.accordion__content-desc Сканируйте QR-коды через СБП без комиссии!
+                
+
+
+        
+
+

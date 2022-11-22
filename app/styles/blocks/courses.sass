@@ -1,0 +1,87 @@
+.courses
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -16px -32px
+
+    &__card
+        width: 100% @md 33.3% @xl 25%
+        padding: 0 16px
+        margin: 0 0 32px
+
+        &--body
+            background: #fff
+            border-radius: 10px
+            overflow: hidden
+            box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.07)
+
+        &-img
+            position: absolute 0 null null 0
+
+            &--wrap
+                position: relative
+                padding: 56% 0 0
+                overflow: hidden
+
+        &-info
+            padding: 28px 20px 10px
+
+        &-title
+            text: 600 18px 1.3
+            min-height: 48px
+            margin: 0 0 32px
+
+        &-progress
+            &__bar
+                background: #E9EDF1
+                size: 100% 2px
+                border-radius: 2px
+                overflow: hidden
+
+                &-made
+                    background: #219653
+                    height: 2px
+
+            &__desc
+                text: #4F545F 500 14px 1.3 
+                margin: 6px 0 0
+
+        .btn--block
+            margin: 24px 0 0
+            justify-content: flex-end
+
+.course-detail
+    &__progress
+        background: #F5F8FF
+        border-radius: 10px
+        padding: 16px 12px @md 24px 20px
+
+        &-row
+            display: @md flex
+            align-items: @md center
+
+        &-bar
+            size: 100% 5px
+            background: #E9EDF1
+            border-radius: 5px
+            overflow: hidden
+
+            &-made
+                height: 100%
+                background: #219653
+
+        &-info
+            margin: 0 0 16px @md 0
+            padding: @md 0 32px 0 0
+            max-width: @md 150px @lg 190px
+            width: 100%
+            display: @md-down flex
+
+        .status
+            margin: 0 16px 0 0 @md 0 0 16px
+
+            &:last-child
+                margin: @md * * 0
+
+    &__desc
+        margin: 16px 0 0

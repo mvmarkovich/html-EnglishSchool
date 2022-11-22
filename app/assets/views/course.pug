@@ -1,0 +1,105 @@
+extends layouts/layout.pug
+
+block title
+    title Курсы | EnglishSchool
+
+block content
+    include blocks/breadcrumbs
+    
+    .main-block
+        .intro
+            .intro__row
+                .intro__info
+                    h1.intro__title Разговорный английский для взрослых
+                    p.intro__desc Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/intro/intro-course.webp" width="516" height="462" alt="English")
+
+                    .btn--block
+                        a.btn.btn--wide.btn--accent(href="#") Записаться
+
+        section.marquee
+            .marquee__wrap
+                .marquee__body
+                    p.marquee__body-desc Уникальная методика обучения по видео 
+                    p.marquee__body-desc Уникальная методика обучения по видео 
+
+        section.tariffs
+            h2.text-center Тарифы по обучению
+
+            .tariffs__body
+                .tariffs__mockup
+                    ul.tariffs__list
+                        li.tariffs__item
+                            .tariffs__item-title Proficiency (в совершенстве) C2 
+                            .tariffs__item-desc Словарный запас от 4500 слов и более. <br> <strong> 4 года — цена 192000₽ (48мес*4000₽).</strong>
+
+                        li.tariffs__item
+                            .tariffs__item-title Advanced (продвинутый) C1 
+                            .tariffs__item-desc Словарный запас 3750-4500 слов. <br><strong>3,5 года — цена 168000₽ (42мес*4000₽).</strong>
+
+                        li.tariffs__item
+                            .tariffs__item-title Upper Intermediate (средне-продвинутый) B2 
+                            .tariffs__item-desc Словарный запас 3250-3750 слов. <br><strong>3 года — цена 144000₽ (36мес*4000₽).</strong>
+
+                        li.tariffs__item
+                            .tariffs__item-title Intermediate (средний) B1
+                            .tariffs__item-desc Словарный запас 2750-3250 слов. <br><strong>2,5 года — 120000₽ (30мес*4000₽).</strong>
+
+                        li.tariffs__item
+                            .tariffs__item-title Elementary (элементарный) A2
+                            .tariffs__item-desc Словарный запас 1500-2500 слов. <br><strong>2 года и 4 месяца — 112000₽ (28мес*4000₽).</strong>
+
+                        li.tariffs__item
+                            .tariffs__item-title Beginner (начальный) A1 
+                            .tariffs__item-desc Словарный запас менее 1500 слов. <br><strong>1 год и 4,5 мес — цена 66000₽ (16,5 мес*4000₽).</strong>
+
+                        li.tariffs__item
+                            .tariffs__item-title Starter (стартовый) A0 
+                            .tariffs__item-desc Словарный запас менее 500 слов. <br><strong>5,5 мес — цена 22000₽ (5,5 мес*4000₽).</strong>
+
+                        li.tariffs__item
+                            .tariffs__item-title Пробный курс
+                            .tariffs__item-desc Словарный запас 90 слов. <br><strong>1 мес — цена 4000₽.</strong>
+
+                    a.btn.btn--accent.btn--full(href="#") Записаться
+
+                .clouds.clouds--tariffs
+                    .clouds__col
+                        .comment
+                            .comment__name Екатерина
+                            .rating.rating-5
+                            .comment__desc Доступно множество вариантов отрывков из Lorem Ipsum, но из них
+
+                    .clouds__col
+                        .comment
+                            .comment__name Екатерина
+                            .rating.rating-5
+                            .comment__desc Доступно множество вариантов отрывков из Lorem Ipsum, но из них
+
+                    .clouds__col
+                        .comment
+                            .comment__name Екатерина
+                            .rating.rating-5
+                            .comment__desc Доступно множество вариантов отрывков из Lorem Ipsum
+
+                    .clouds__col
+                        .clouds__col-title Вы начнете говорить через месяц
+
+                    .clouds__col
+                        .clouds__col-title Удобный личный кабинет
+
+                    .clouds__col
+                        .clouds__col-title Проверка заданий носителем языка
+
+                    .clouds__col
+                        .clouds__col-title Огромный кешбек
+
+                    .clouds__col
+                        .clouds__col-title Всего 50 минут в день
+
+        include blocks/feedback
+
+        include blocks/subscribe
+        

@@ -1,0 +1,69 @@
+extends layouts/lk-layout.pug
+
+block title
+    title Курс C2 | EnglishSchool
+
+block content
+    .main-block
+        .page-head
+            .page-head__info
+                h1.main-title-small Курс разговорный английский C2
+                
+                p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. 
+
+        section
+            h3 Выбрать курс или урок
+
+            .test
+                .test__panel
+                    .test__panel-title За все курсы
+
+                .test__body
+                    .test__nav
+                        .test__form
+                            ul.test__nav-list
+                                li.test__nav-item
+                                    .input
+                                        input.input__checkbox#test_1(type="checkbox" name="text_1")
+                                        label.input__checkbox-label(for="test_1") По курсу C1
+
+                                    .test__nav-child
+                                        ul.test__nav-child-list
+                                            li.test__nav-child-item
+                                                .input
+                                                    input.input__checkbox#test_1_1(type="checkbox" name="text_1_1")
+                                                    label.input__checkbox-label(for="test_1_1") По курсу C1
+
+                                            li.test__nav-child-item
+                                                .input
+                                                    input.input__checkbox#test_1_2(type="checkbox" name="text_1_2")
+                                                    label.input__checkbox-label(for="test_1_2") По курсу C1
+
+                                            li.test__nav-child-item
+                                                .input
+                                                    input.input__checkbox#test_1_3(type="checkbox" name="text_1_3")
+                                                    label.input__checkbox-label(for="test_1_3") По курсу C1
+
+                                .test__nav-item
+                                    .input
+                                        input.input__checkbox#test_2(type="checkbox" name="text_2")
+                                        label.input__checkbox-label(for="test_2") По курсу C2
+
+                                .test__nav-item
+                                    .input
+                                        input.input__checkbox#test_3(type="checkbox" name="text_3")
+                                        label.input__checkbox-label(for="test_3") По курсу B1
+
+                                .test__nav-item
+                                    .input
+                                        input.input__checkbox#test_4(type="checkbox" name="text_4")
+                                        label.input__checkbox-label(for="test_4") По курсу B2
+
+                    .form__send
+                        button.btn.btn--medium.btn--wide.btn--accent(type="submit" aria-label="Send form") Пройти тест
+
+                        
+                            
+
+
+        include blocks/subscribe

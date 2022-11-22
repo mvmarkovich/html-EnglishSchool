@@ -1,0 +1,99 @@
+.container
+  max-width: $container-sm-px
+  margin: * auto
+  padding: * 1rem
+
+@media $md
+  .container
+    max-width: $container-md-px
+
+@media $lg
+  .container
+    max-width: $container-lg-px
+
+@media $xl
+  .container
+    max-width: $container-xl-px
+
+@media $xl-l
+  .container
+    max-width: $container-xl-l-px
+
+.main-block
+  width: 100%
+
+.aside
+  min-width: @lg 336px @xl-l 400px
+  max-width: @lg 336px @xl-l 400px
+  margin: 0 0 32px @lg 0 28px 0 0
+
+.main-aside-container
+  display: @lg flex
+  margin: 32px 0 90px @md 40px 0 140px
+
+.main-aside-container .main-block
+  padding: 24px 20px 48px
+  background: #fff
+  box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.07)
+  border-radius: 10px
+  overflow: hidden
+
+.wrapper
+  overflow-x: hidden 
+
+.page-head
+  display: @lg flex
+  align-items: @lg center
+  justify-content: @lg space-between
+  margin: 32px 0 -30px @md 40px 0 -70px
+
+  h1
+    margin: 0 @lg 0 32px 0 0
+
+  .btns-spacer
+    margin: @lg-down 24px 0 0
+
+    .btn
+      width: @md-down 100%
+      margin: @md-down 0 0 16px
+
+      &:last-child
+        margin: @md-down 0
+
+  &__control
+    &-list
+      list-style: none
+      margin: 0
+      padding: 0
+      display: flex
+      align-items: center
+
+    &-item
+      margin: 0 28px 0 0
+
+      &--current
+        ^^&-link
+          pointer-events: none
+
+          &:after
+            background: #2F80ED
+            transform: translateY(0)
+
+    &-link
+      position: relative
+      font-family: $font-title
+      text: #030A1B 600 21px 1.3 @sm 24px @md 30px
+      padding: 0 0 2px
+
+      &:hover:after
+        background: #2F80ED
+        transform: translateY(0)
+
+      &:after
+        content: ''
+        size: 100% 3px
+        position: absolute null null -2px 0
+        transform: translateY(5px)
+        background: transparent
+        border-radius: 3px
+        transition: .2s

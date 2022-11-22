@@ -1,0 +1,41 @@
+.modal#lesson-test
+    .modal__item
+        button.modal__close.btn.btn--reset.btn--cross(data-close-modal)
+
+        form.modal__item-form.form-test(action="/" method="/")
+            .modal__item-body
+                .form-test__item
+                    .modal__item-header
+                        .modal__item-header-title Вопрос 1
+
+                        .progress__value
+                            .progress__value-bar
+                                .progress__value-bar-made(style="width:33.3%")
+
+                    .modal__item-img--wrap
+                        img.modal__item-img(src="img/content/modal-lesson.webp" width="566" height="300" alt="Название теста")
+                
+                    .form-test__group
+                        .input
+                            input.input__radio#lesson-test-1(type="radio" name="lesson-test")
+                            label.input__radio-label-bg(for="lesson-test-1") Слово
+
+                        .input.input--error
+                            input.input__radio#lesson-test-2(type="radio" name="lesson-test")
+                            label.input__radio-label-bg(for="lesson-test-2") Слово
+
+                        .input.input--success
+                            input.input__radio#lesson-test-3(type="radio" name="lesson-test")
+                            label.input__radio-label-bg(for="lesson-test-3") Слово
+
+                        .input
+                            input.input__radio#lesson-test-4(type="radio" name="lesson-test")
+                            label.input__radio-label-bg(for="lesson-test-4") Слово
+
+                .form-test__control
+                    a.btn.btn--medium.btn--border(href="#") Пропустить
+                    a.btn.btn--medium.btn--accent(href="#") Далее
+
+            
+
+

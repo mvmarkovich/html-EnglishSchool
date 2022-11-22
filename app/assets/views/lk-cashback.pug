@@ -1,0 +1,141 @@
+extends layouts/lk-layout.pug
+
+block title
+    title ЛК кешбэк | EnglishSchool
+
+block content
+    .main-block
+        .page-head
+            .page-head__control
+                ul.page-head__control-list
+                    li.page-head__control-item
+                        a.page-head__control-link(href="#") Списания
+
+                    li.page-head__control-item.page-head__control-item--current
+                        a.page-head__control-link(href="lk-cashback.html") Кешбэк
+
+            .btns-spacer
+                a.btn.btn--narrow.btn--medium.btn--accent(href="#") Купить курс
+
+        section.messenger
+            .messenger__head
+                .input
+                    input.input__checkbox#messanger-choose-all(type="checkbox" name="messanger-choose-all")
+                    label.input__checkbox-label(for="messanger-choose-all")
+
+                .input.input--wide
+                    select.input__elem(name="messanger-action")
+                        option(value="") Удалить
+                        option(value="") Отправить в спам
+
+                .form__send
+                    button.btn.btn--medium.btn--wide.btn--accent(type="button") Применить
+
+            .messenger__body
+                .messenger__item
+                    .input
+                        input.input__checkbox#messanger-choose-0(type="checkbox" name="messanger-choose-0")
+                        label.input__checkbox-label(for="messanger-choose-0")
+
+                    .messenger__item-content
+                        .messenger__item-row
+                            .messenger__item-user
+                                img.messenger__item-user-avatar(src="img/content/avatars/messanger-user.webp" width="40" height="40" alt="Имя пользователя")
+
+                            .messenger__item-desc
+                                p Перевод на карту Visa RUS ************1818
+
+                        .messenger__item-cashback-price 25 000 <span class="rub">Р</span>
+
+                    button.btn.btn--reset.btn--delete(aria-label="Delete dialog")
+
+                .messenger__item
+                    .input
+                        input.input__checkbox#messanger-choose-1(type="checkbox" name="messanger-choose-1")
+                        label.input__checkbox-label(for="messanger-choose-1")
+
+                    .messenger__item-content
+                        .messenger__item-row
+                            .messenger__item-user
+                                img.messenger__item-user-avatar(src="img/content/avatars/messanger-user.webp" width="40" height="40" alt="Имя пользователя")
+
+                            .messenger__item-desc
+                                p Перевод на карту Visa RUS ************1818
+
+                        .messenger__item-cashback-price 12 000 <span class="rub">Р</span>
+
+                    button.btn.btn--reset.btn--delete(aria-label="Delete dialog")
+
+        section.courses
+            h2 Вы ещё не купили
+
+            .courses__list
+                .courses__card
+                    .courses__card--body
+                        .courses__card-img--wrap
+                            img.courses__card-img(src="img/content/courses/Proficiency - C2.webp" width="300" height="200" alt="Title course")
+
+                        .courses__card-info
+                            .courses__card-title Proficiency - C2
+
+                            .courses__card-progress
+                                .courses__card-progress__bar
+                                    .courses__card-progress__bar-made(style="width:60%") 
+
+                                .courses__card-progress__desc 60% Пройдено
+                                
+                            .btn--block
+                                a.btn.btn--narrow.btn--tiny.btn--accent(href="#") Смотреть уроки
+
+                .courses__card
+                    .courses__card--body
+                        .courses__card-img--wrap
+                            img.courses__card-img(src="img/content/courses/Advanced - C1.webp" width="300" height="200" alt="Title course")
+
+                        .courses__card-info
+                            .courses__card-title Advanced - C1 
+
+                            .courses__card-progress
+                                .courses__card-progress__bar
+                                    .courses__card-progress__bar-made(style="width:30%") 
+
+                                .courses__card-progress__desc 30% Пройдено
+                                
+                            .btn--block
+                                a.btn.btn--narrow.btn--tiny.btn--accent(href="#") Смотреть уроки
+
+                .courses__card
+                    .courses__card--body
+                        .courses__card-img--wrap
+                            img.courses__card-img(src="img/content/courses/Upper Intermediate - B2.webp" width="300" height="200" alt="Title course")
+
+                        .courses__card-info
+                            .courses__card-title Upper Intermediate - B2
+
+                            .courses__card-progress
+                                .courses__card-progress__bar
+                                    .courses__card-progress__bar-made(style="width:0%") 
+
+                                .courses__card-progress__desc 0% Пройдено
+                                
+                            .btn--block
+                                a.btn.btn--narrow.btn--tiny.btn--accent(href="#") Смотреть уроки
+
+                .courses__card
+                    .courses__card--body
+                        .courses__card-img--wrap
+                            img.courses__card-img(src="img/content/courses/Intermediate - B1.webp" width="300" height="200" alt="Title course")
+
+                        .courses__card-info
+                            .courses__card-title Intermediate - B1
+
+                            .courses__card-progress
+                                .courses__card-progress__bar
+                                    .courses__card-progress__bar-made(style="width:15%") 
+
+                                .courses__card-progress__desc 15% Пройдено
+                                
+                            .btn--block
+                                a.btn.btn--narrow.btn--tiny.btn--accent(href="#") Смотреть уроки
+
+

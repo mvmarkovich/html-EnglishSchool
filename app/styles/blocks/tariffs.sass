@@ -1,0 +1,37 @@
+.tariffs
+    &__body
+        position: relative
+
+    &__mockup
+        size: @md 630px 1100px
+        min-width: @md 620px
+        margin: 0 auto 48px @lg 0 auto
+        background: #F9FAFA @md resolve("content/mockup-iphone.svg") no-repeat center / contain
+        padding: 20px @sm 30px @md 90px 96px 0
+        box-shadow: @md-down 0px 5.53px 17.5459px rgba(0, 0, 0, 0.03)
+        border: @md-down 1px solid #E1E1E1
+        border-radius: @md-down 48px
+
+    &__list
+        list-style: none
+        margin: 0
+        padding: 0
+
+    &__item
+        background: #fff
+        padding: 16px
+        margin: 0 0 16px
+        border-radius: 10px
+        box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.07)
+
+        &-title, &-desc
+            text: #040B1C 500 14px 1.3 @md 16px
+
+        &-title
+            font-weight: 600
+
+        &:last-child
+            margin: 0
+
+    .btn
+        margin: 16px 0 0

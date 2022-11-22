@@ -1,0 +1,186 @@
+.lesson
+    &__section
+        margin: 70px 0 @md 100px 0
+
+        .input
+            margin: 0
+            height: 100%
+
+        .input__elem
+            height: 100%
+
+    &__row
+        display: @lg flex
+        flex-wrap: @lg nowrap
+        margin: @lg 0 -16px
+
+    &__col
+        padding: @lg 0 16px
+        width: 100% @lg 66.6%
+
+    &__video
+        position: relative
+        padding: 51% 0 0
+        overflow: hidden
+        border-radius: 10px
+
+        &-preview
+            position: absolute
+            top: 0
+            left: 0
+
+        .btn--play
+            position: absolute 50% null null 50%
+            transform: translate(-50%, -50%)
+
+    &__aside
+        width: 100% @lg 33.3%
+        margin: 24px 0 0 @lg  0
+
+        &-card
+            background: #fff
+            box-shadow: 0px 8px 70px rgba(0, 0, 0, 0.07)
+            border-radius: 10px
+            padding: 20px
+            height: 100%
+
+            > *
+                margin: 0 0 16px
+
+                &:last-child
+                    margin: 0
+
+        &-title
+            text: #030A1B 600 30px 1.3
+            margin: 0 0 16px
+
+    &__table
+        width: 100%
+        overflow: hidden
+
+        &-short
+            max-width: 845px
+
+        &--add-stroke
+            margin: 20px 0 0
+
+        table
+            width: 100%
+            border: 1px solid #E9EDF1
+            border-radius: 10px 
+            display: @md-down block
+            overflow: @md-down auto
+
+            thead
+                td
+                    text: #030A1B 600 18px 1.3
+                    text-align: center
+
+            td
+                width: 25%
+                padding: 8px 20px
+                border-right: 1px solid #E9EDF1
+                border-bottom: 1px solid #E9EDF1
+
+                &:last-child
+                    border-right: none
+
+            tbody
+                tr:last-child td
+                    border-bottom: none
+
+            input
+                @extend .input__elem
+                min-height: 32px
+                border-radius: 0
+                border: none
+                border-bottom: 1px solid #E9EDF1
+                text-align: center
+
+            input[type="file"]
+                display: none
+
+            label
+                width: 100%
+                text: #fff 600 16px 1.3
+                min-height: 40px
+                border-radius: 10px
+                background: #2F80ED
+                display: inline-flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                text-align: center
+
+                &.hide
+                    display: none
+
+                &.label-error-file
+                    background: #EB5757
+
+            input[type="time"]
+                border-bottom: none
+
+.lesson-content
+    margin: 20px 0 0
+
+    &__head
+        display: @md flex
+        align-items: @md center
+        justify-content: @md space-between
+        margin: 0 0 16px
+
+    &__title
+        text: #030A1B 600 20px 1.3
+        margin: 0 0 8px @md 0 16px 0 0
+
+    &__chapter
+        position: relative
+        padding: 16px 0
+        display: @md flex
+        align-items: @md center
+        justify-content: @md space-between
+        border-bottom: 1px solid #E9EDF1
+
+        .icon
+            position: @md-down absolute
+            top: @md-down 21px
+            right: @md-down 0
+
+        &-title
+            text: #030A1B 500 16px 1.3
+            display: inline-flex
+            align-items: center
+            padding: @md-down 0 32px 0 0
+
+            &:before
+                content: ''
+                size: 30px
+                min-width: 30px
+                display: inline-flex
+                background: resolve("icons/media.svg") no-repeat center / contain
+                margin: 0 10px 0 0
+
+        &--completed
+            ^&-title
+                color: #A7A9AF
+                text-decoration: line-through
+                
+                &:before
+                    background-image: svg-load("icons/media.svg", fill="#A7A9AF") 
+
+        &:last-child
+            border-bottom: none
+
+    .status
+        text: #4F545F 16px
+        padding: 0
+        margin: 0 28px 8px 0
+
+        &:last-child
+            margin: * 0 * *
+
+    .status--link
+        text: #2F80ED
+        padding: 0
+        margin: 8px 0 0 @md 0 8px 0 0

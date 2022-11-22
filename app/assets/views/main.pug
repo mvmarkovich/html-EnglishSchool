@@ -1,0 +1,164 @@
+extends layouts/main-layout.pug
+
+block title
+    title Главная | EnglishSchool
+
+block content
+    .main-block
+        .intro.intro--main
+            .intro__row
+                .intro__info
+                    .intro__label(data-title="Noble English") Noble English
+
+                    h1.intro__title Разговорный английский для взрослых
+                    p.intro__desc В <strong>10</strong> раз дешевле, чем в других школах! <br> Стоимость <strong>1</strong> урока всего <strong>100</strong>
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/intro/intro-main.svg" width="800" height="889" alt="English")
+
+                        a.btn.btn--reset.btn--play-anim(href="#" title="Play video")
+
+                    ul.list-reset.list-check.list-horizontal
+                        li 1000+ довольных учеников
+                        li Быстрая обратная связь
+
+                    .btn--block
+                        a.btn.btn--wide.btn--accent(href="#") Записаться
+
+        section.marquee
+            .marquee__wrap
+                .marquee__body
+                    p.marquee__body-desc Уникальная методика обучения по видео 
+                    p.marquee__body-desc Уникальная методика обучения по видео 
+
+        include blocks/main-courses
+
+        section.features
+            .accordion
+                .accordion__item
+                    button.btn.btn--reset.accordion__item-toggle(aria-label="Button toggle") Тебе не нужен сертификат потому что
+                    .accordion__item-content
+                        p Спокойно сможешь познакомиться с девушкой <br> Заказать пицу по телефону <br> Закачиваем слова прямо в голову
+
+                .accordion__item
+                    button.btn.btn--reset.accordion__item-toggle(aria-label="Button toggle") Педагогический состав
+                    .accordion__item-content
+                        p Со студентами работают 18 опытных преподавателей с профильным образованием, включая носителей языка. Мы выбираем лучших из лучших и именно поэтому гарантируем 100% результат. <br><br> Мы обучаем с нуля не только английскому языку. Вы можете также изучить немецкий, французский, итальянский и китайский языки.
+
+                .accordion__item
+                    button.btn.btn--reset.accordion__item-toggle(aria-label="Button toggle") Программы обучения для детей и взрослых
+                    .accordion__item-content
+                        p Обучающие программы составляются в зависимости от возраста учеников и имеют свои особенности. <br><br> Мы обучаем как начинающих, так и тех, у кого уже есть базовые знания языка. <br><br> Уроки английского можно посещать онлайн, что очень удобно. Такое решение позволяет эффективно планировать своё время и не тратить его на то, чтобы добраться до репетитора. 
+
+                .accordion__item
+                    button.btn.btn--reset.accordion__item-toggle(aria-label="Button toggle") Преимущества школы
+                    .accordion__item-content
+                        p Мы знаем, как трудно найти грамотного учителя. Чтобы подтвердить на деле нашу квалификацию, предлагаем посетить бесплатный урок английского языка для детей и взрослых <br><br> Во время знакомства вы убедитесь, что изучать английский – легко и интересно. <br><br> Для погружения в языковую среду мы используем уникальную методику. Ученики осваивают все новые слова и сразу применяют их на практике. <br><br> Курсы английского для детей и взрослых в включают в себя занятия с носителем языка. Для наших учеников они полностью бесплатные.
+
+        section.map-custom.bg-gray
+            h2.map-custom__title 1000 + студентов с нами
+
+            .map-custom__bg--wrap
+                img.map-custom__bg(src="img/content/user-map.svg" width="1280" height="400" alt="1000 + студентов с нами")
+
+                .map-custom__users
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_1.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_2.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_3.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_5.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_4.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_6.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_7.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_8.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_9.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_10.webp" width="200" height="200" alt="Имя пользователя")
+
+                    .map-custom__users-ava--wrap
+                        img.map-custom__users-ava(src="img/content/map-users/item_4.webp" width="200" height="200" alt="Имя пользователя")
+
+
+        include blocks/main-reviews
+
+        section.about-us.bg-gray
+            .about-us__info
+                h2 О нас
+                p.about-us__desc Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Доступно множество вариантов отрывков из Lorem Ipsum, 
+
+                .btn--block
+                    a.btn.btn--wide.btn--accent(href="#") Подписаться
+
+            .about-us__img--wrap
+                img.about-us__img(src="img/content/about-us/item_1.webp" width="586" height="468" alt="О нас")
+
+        include blocks/subscribe
+
+block script
+    script(type="text/javascript").
+        //
+        // Carousel
+        //
+
+        let swiper = new Swiper(".reviews__carousel", {
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+
+                1152: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                }
+            },
+
+            navigation: {
+                prevEl: '.carousel-nav-prev',
+                nextEl: '.carousel-nav-next'
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+
+        //
+        // Animation
+        //
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-anim');
+                }
+            });
+        });
+        
+        observer.observe(document.querySelector('.map-custom'));

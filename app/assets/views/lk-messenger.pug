@@ -1,0 +1,72 @@
+extends layouts/lk-layout.pug
+
+block title
+    title ЛК Сообщения | EnglishSchool
+
+block content
+    .main-block
+        .page-head
+            .page-head__control
+                ul.page-head__control-list
+                    li.page-head__control-item
+                        a.page-head__control-link(href="lk-notices.html") Уведомления
+
+                    li.page-head__control-item.page-head__control-item--current
+                        a.page-head__control-link(href="lk-messenger.html") Сообщения
+
+            .btns-spacer
+                a.btn.btn--narrow.btn--medium.btn--accent(href="#") Купить курс
+
+        section.messenger
+            .messenger__head
+                .input
+                    input.input__checkbox#messanger-choose-all(type="checkbox" name="messanger-choose-all")
+                    label.input__checkbox-label(for="messanger-choose-all")
+
+                .input.input--wide
+                    select.input__elem(name="messanger-action")
+                        option(value="") Удалить
+                        option(value="") Отправить в спам
+
+                .form__send
+                    button.btn.btn--medium.btn--wide.btn--accent(type="button") Применить
+
+            .messenger__body
+                .messenger__item
+                    .input
+                        input.input__checkbox#messanger-choose-0(type="checkbox" name="messanger-choose-0")
+                        label.input__checkbox-label(for="messanger-choose-0")
+
+                    .messenger__item-content
+                        .messenger__item-user
+                            img.messenger__item-user-avatar(src="img/content/avatars/messanger-user.webp" width="40" height="40" alt="Имя пользователя")
+
+                        .messenger__item-desc
+                            p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+
+                            .status--row
+                                .status.status--reset 17.10.2022
+                                .status.status--reset 13:00
+                                a.status.status--reset.status--link(href="#") Подробнее
+
+                    button.btn.btn--reset.btn--delete(aria-label="Delete dialog")
+
+                .messenger__item
+                    .input
+                        input.input__checkbox#messanger-choose-0(type="checkbox" name="messanger-choose-0")
+                        label.input__checkbox-label(for="messanger-choose-0")
+
+                    .messenger__item-content
+                        .messenger__item-user
+                            img.messenger__item-user-avatar(src="img/content/avatars/messanger-user.webp" width="40" height="40" alt="Имя пользователя")
+
+                        .messenger__item-desc
+                            p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+
+                            .status--row
+                                .status.status--reset 17.10.2022
+                                .status.status--reset 13:00
+                                a.status.status--reset.status--link(href="#") Подробнее
+
+                    button.btn.btn--reset.btn--delete(aria-label="Delete dialog")
+

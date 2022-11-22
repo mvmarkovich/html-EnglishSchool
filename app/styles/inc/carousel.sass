@@ -1,0 +1,43 @@
+.carousel-nav-btn
+    size: 48px
+    min-width: 48px
+    min-height: 48px
+    border-radius: 10px
+
+    position: absolute 50% null null
+    transform: translateY(-50%)
+
+    background-color: #2F80ED 
+    background-size: 24px
+    background-position: center
+    background-repeat: no-repeat
+
+    &.swiper-button-disabled
+        background-color: #E9EDF1
+
+.carousel-nav-prev
+    background-image: resolve("icons/chevron-left.svg")
+    left: 0 @lg -76px
+
+.carousel-nav-next
+    background-image: resolve("icons/chevron-right.svg")
+    right: 0 @lg -76px
+
+.swiper-pagination-bullets.swiper-pagination-horizontal
+    bottom: -42px
+    height: 12px
+    display: flex
+    justify-content: center
+
+.swiper-pagination-bullet 
+    size: 12px
+    min-width: 12px
+    background: #E9EDF1
+    opacity: 1
+    margin: 0 10px 0 0
+
+    &:last-child
+        margin: 0 * 0 0
+
+.swiper-pagination-bullet-active
+    background: #2E6EFF

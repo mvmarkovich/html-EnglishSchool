@@ -1,0 +1,36 @@
+.social
+  &__link
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    size: 32px
+    min-width: 32px
+    border-radius: 10px
+    margin: 0 20px 0 0
+    overflow: hidden
+    background-color: #0077FF
+
+    &:before
+      content: ''
+      size: 24px
+      min-width: 24px
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat
+
+    &--fb
+      &:before
+        background-image: resolve('icons/social/fb.svg')
+
+    &--inst
+      background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+
+      &:before
+        background-image: resolve('icons/social/inst.svg')
+
+    &--vk
+      &:before
+        background-image: resolve('icons/social/vk.svg')
+
+    &:last-child
+      margin: * 0 * *

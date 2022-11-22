@@ -1,0 +1,13 @@
+extends layouts/layout.pug
+
+block title
+    title Модальные окна | EnglishSchool
+
+block content
+    .main-block
+        
+        section
+            .btns-spacer
+                button.btn.btn--accent(data-modal="lesson-test") Тест
+
+        include blocks/subscribe

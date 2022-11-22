@@ -1,0 +1,52 @@
+.list-reset
+  list-style: none
+  padding: 0
+  margin: 0
+
+.overflow-hidden
+  overflow: hidden
+
+.visibility-hidden
+  visibility: hidden
+
+.bg-gray
+  background: #F5F8FF
+  box-shadow: -280px 0 0 #F5F8FF, 280px 0 0 #F5F8FF @md -716px 0 0 #F5F8FF, 716px 0 0 #F5F8FF
+
+.bg-dark 
+  background: #040B1C
+  color: #fff
+  box-shadow: -280px 0 0 #040B1C, 280px 0 0 #040B1C @md -716px 0 0 #040B1C, 716px 0 0 #040B1C
+
+img
+  display: block
+  max-width: 100%
+  width: auto
+  height: auto
+
+.hide
+  display: none
+  
+  &-xl-down
+    display: @xl-down none
+
+  &-xl-only
+    display: @xl none 
+
+  &-lg-down
+    display: @lg-down none
+
+  &-lg-up
+    display: @lg none
+
+  &-md-down
+    display: @md-down none
+
+  &-md-up
+    display: @md none
+
+  &-sm-down
+    display: @sm-down none
+
+  &-sm-only
+    display: @sm none

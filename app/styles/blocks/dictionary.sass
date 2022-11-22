@@ -1,0 +1,38 @@
+.dictionary
+    &__list
+        list-style: none
+        margin: 0 -10px 30px
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+        max-width: 780px
+
+    &__section
+        margin: 24px 0 0
+
+        .test
+            margin: 0 0 52px
+
+    &__item
+        padding: 0 10px
+        margin: 0 0 20px
+
+        &-link
+            size: 40px
+            min-width: 40px
+            border-radius: 50%
+            text: #030A1B 600 20px 40px
+            text-transform: uppercase
+            text-align: center
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1)
+            display: block
+            transition: .2s
+
+            &:hover
+                color: #fff
+                background: #2F80ED
+
+        &--current
+            ^&-link
+                color: #fff
+                background: #2F80ED

@@ -1,0 +1,109 @@
+extends layouts/layout.pug
+
+block title
+    title Курсы | EnglishSchool
+
+block content
+    include blocks/breadcrumbs
+
+    .page-head
+        h1 Задание № 1
+
+        .btns-spacer
+            a.btn.btn--medium.btn--border(href="#") Предыдущее задание
+            a.btn.btn--medium.btn--border(href="#") Следующее задание
+
+    .main-block
+        .lesson
+            form.lesson__form(action="/" method="/")
+                section.lesson__section
+                    .lesson__row
+                        .lesson__col
+                            .lesson__video
+                                img.lesson__video-preview(src="img/content/lesson/video-preview.webp" width="843" height="430" alt="Video preview")
+                                button.btn.btn--reset.btn--play(aria-label="Play video")
+
+                        .lesson__col.lesson__aside
+                            .lesson__aside-card
+                                h3.lesson__aside-title Описание задания №1
+                                p.lesson__aside-desc Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Но большинство из них претерпели изменения в той или иной форме, просто свободный текст
+
+                section.lesson__section
+                    h2 Заметки
+
+                    .lesson__row
+                        .lesson__col
+                            .input
+                                textarea.input__elem(name="lesson-note" placeholder="Написать заметку")
+
+                        .lesson__col.lesson__aside
+                            .lesson__aside-card
+                                p.lesson__aside-desc Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Но большинство из них претерпели изменения в той
+
+                section.lesson__section
+                    h2 Слова
+
+                    .lesson__table
+                        table
+                            thead
+                                tr
+                                    td Русский
+                                    td Английский
+                                    td Время
+                                    td Видео
+
+                            tbody
+                                tr
+                                    td 
+                                        input(type="text" placeholder="Введите слово" value="Слово")
+
+                                    td 
+                                        input(type="text" placeholder="Введите слово" value="Word")
+
+                                    td
+                                        input(type="time")
+
+                                    td
+                                        input#lesson-file-1(type="file" name="lesson-file-1")
+                                        label.hide(for="lesson-file-1") Добавить видео
+
+                                        .input__file-preview
+                                            img(src="img/content/lesson/video-preview.webp")
+                                            p Видео.mp4
+
+                                tr
+                                    td 
+                                        input(type="text" placeholder="Введите слово" value="Собака")
+
+                                    td 
+                                        input(type="text" placeholder="Введите слово" value="Dog")
+
+                                    td
+                                        input(type="time")
+
+                                    td
+                                        label(for="lesson-file-2") Добавить видео
+                                        input#lesson-file-2(type="file" name="lesson-file-2")
+
+                                tr
+                                    td 
+                                        input(type="text" placeholder="Введите слово")
+
+                                    td 
+                                        input(type="text" placeholder="Введите слово")
+
+                                    td
+                                        input(type="time")
+
+                                    td
+                                        input#lesson-file-3(type="file" name="lesson-file-3")
+                                        label.label-error-file(for="lesson-file-3") Ошибка загрузки
+
+                    button.btn.btn--narrow.btn--medium.btn--accent.lesson__table--add-stroke(aria-label="Add stroke table") Добавить слово
+
+                    .btns-spacer.form__send
+                        a.btn.btn--narrow.btn--medium.btn--border(href="#save") Сохранить
+                        button.btn.btn--narrow.btn--medium.btn--border(type="button" aria-label="Next") Далее
+                
+        include blocks/subscribe
+        

@@ -1,0 +1,50 @@
+.main-courses
+    margin: @xl * -100px
+
+    &__head
+        display: @md flex
+        align-items: @md flex-start
+        justify-content: @md space-between
+        margin: 0 0 24px @md 0 0 32px
+
+        h2
+            color: #030A1B
+            margin: 0 0 16px @md 0 24px 0 0
+
+        .status
+            white-space: nowrap
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: @md * -16px
+
+    &__col
+        width: 100% @md 50%
+        padding: @md 0 16px
+        margin: @md-down 0 0 24px
+
+        &--body
+            background: #fff
+            border-radius: 10px
+            overflow: hidden
+
+        &-img
+            position: absolute 0 null null 0
+
+            &--wrap
+                position: relative
+                padding: 50% 0 0
+                overflow: hidden
+
+        &-info
+            padding: 20px 20px 40px
+
+        &-title
+            text: #030A1B 600 16px 1.3 @sm 18px
+            margin: 0 0 24px
+
+        .btn--wide
+            min-width: @lg-down 1px
+            width: @lg-down 100%
+

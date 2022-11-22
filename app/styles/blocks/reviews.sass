@@ -1,0 +1,47 @@
+.reviews
+    &__body
+        position: relative
+        padding: @md 0 64px @lg 0
+
+        .carousel-nav-btn
+            display: @md-down none
+
+    &__carousel
+        overflow: hidden
+
+    &__col
+        size: 290px 390px @md 300px 400px
+        border-radius: 10px
+        overflow: hidden
+
+        &--body
+            position: relative
+            height: 400px
+
+            &:hover
+                ^^&-info
+                    opacity: 1
+
+        &-img
+            position: absolute 0 null null 50%
+            transform: translateX(-50%) 
+            object-fit: cover
+            height: 100%
+
+            &--wrap
+                position: relative
+                height: 100%
+
+        &-info
+            size: 100%
+            opacity: 0
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            padding: 24px 20px
+            background: #F5F8FF
+            position: absolute 0 null null 0
+            transition: opacity .2s ease-in-out
+
+        &-desc
+            color: #4F545F

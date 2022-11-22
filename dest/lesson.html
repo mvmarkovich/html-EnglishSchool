@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000">
+    <title>Курсы | EnglishSchool</title>
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__row"><a class="header__logo" href="main.html"><img class="header__logo-img" src="img/icons/header-logo.webp" width="324" height="53" alt="English School"></a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="about-us.html">О нас</a></li>
+              <li class="header__nav-item header__nav-item--current"><a class="header__nav-link" href="courses.html">Курсы</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__panel"><a class="btn btn--wide btn--medium btn--accent" href="#">Онлайн кабинет</a>
+            <button class="btn btn--reset btn--burger header__burger" aria-label="Toggle menu"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu-cover"></div>
+    <div class="wrapper">
+      <div class="page-container container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="main.html">Главная</a></li>
+            <li class="breadcrumbs__item breadcrumbs__item--current"><a class="breadcrumbs__item-link" href="course.html">Разговорный английский для взрослых</a></li>
+          </ul>
+        </div>
+        <div class="page-head">
+          <h1>Задание № 1</h1>
+          <div class="btns-spacer"><a class="btn btn--medium btn--border" href="#">Предыдущее задание</a><a class="btn btn--medium btn--border" href="#">Следующее задание</a></div>
+        </div>
+        <div class="main-block">
+          <div class="lesson">
+            <form class="lesson__form" action="/" method="/">
+              <section class="lesson__section">
+                <div class="lesson__row">
+                  <div class="lesson__col">
+                    <div class="lesson__video"><img class="lesson__video-preview" src="img/content/lesson/video-preview.webp" width="843" height="430" alt="Video preview">
+                      <button class="btn btn--reset btn--play" aria-label="Play video"></button>
+                    </div>
+                  </div>
+                  <div class="lesson__col lesson__aside">
+                    <div class="lesson__aside-card">
+                      <h3 class="lesson__aside-title">Описание задания №1</h3>
+                      <p class="lesson__aside-desc">Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Но большинство из них претерпели изменения в той или иной форме, просто свободный текст</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="lesson__section">
+                <h2>Заметки</h2>
+                <div class="lesson__row">
+                  <div class="lesson__col">
+                    <div class="input">
+                      <textarea class="input__elem" name="lesson-note" placeholder="Написать заметку"></textarea>
+                    </div>
+                  </div>
+                  <div class="lesson__col lesson__aside">
+                    <div class="lesson__aside-card">
+                      <p class="lesson__aside-desc">Доступно множество вариантов отрывков из Lorem Ipsum, но большинство из них претерпели изменения в той или иной форме, просто свободный текст с добавлением юмора. Но большинство из них претерпели изменения в той</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="lesson__section">
+                <h2>Слова</h2>
+                <div class="lesson__table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <td>Русский</td>
+                        <td>Английский</td>
+                        <td>Время</td>
+                        <td>Видео</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> 
+                          <input type="text" placeholder="Введите слово" value="Слово">
+                        </td>
+                        <td> 
+                          <input type="text" placeholder="Введите слово" value="Word">
+                        </td>
+                        <td>
+                          <input type="time">
+                        </td>
+                        <td>
+                          <input id="lesson-file-1" type="file" name="lesson-file-1">
+                          <label class="hide" for="lesson-file-1">Добавить видео</label>
+                          <div class="input__file-preview"><img src="img/content/lesson/video-preview.webp">
+                            <p>Видео.mp4</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 
+                          <input type="text" placeholder="Введите слово" value="Собака">
+                        </td>
+                        <td> 
+                          <input type="text" placeholder="Введите слово" value="Dog">
+                        </td>
+                        <td>
+                          <input type="time">
+                        </td>
+                        <td>
+                          <label for="lesson-file-2">Добавить видео</label>
+                          <input id="lesson-file-2" type="file" name="lesson-file-2">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 
+                          <input type="text" placeholder="Введите слово">
+                        </td>
+                        <td> 
+                          <input type="text" placeholder="Введите слово">
+                        </td>
+                        <td>
+                          <input type="time">
+                        </td>
+                        <td>
+                          <input id="lesson-file-3" type="file" name="lesson-file-3">
+                          <label class="label-error-file" for="lesson-file-3">Ошибка загрузки</label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button class="btn btn--narrow btn--medium btn--accent lesson__table--add-stroke" aria-label="Add stroke table">Добавить слово</button>
+                <div class="btns-spacer form__send"><a class="btn btn--narrow btn--medium btn--border" href="#save">Сохранить</a>
+                  <button class="btn btn--narrow btn--medium btn--border" type="button" aria-label="Next">Далее</button>
+                </div>
+              </section>
+            </form>
+          </div>
+          <div class="subscribe">
+            <div class="subscribe__info">
+              <h4 class="subscribe__title">Новости!</h4>
+              <p class="subscribe__desc">Узнавайте первым о скидках, предложениях и мероприятиях!</p>
+            </div>
+            <form class="form subscribe__form" action="/" method="/">
+              <input class="input__elem" type="text" name="subscribe-email" placeholder="Почта">
+              <button class="btn btn--reset btn--chevron-right form__submit" type="submit" aria-label="Send form"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="container">
+          <div class="footer__nav">
+            <ul>
+              <li><a href="about-us.html">О нас</a></li>
+              <li><a href="courses.html">Курсы</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__panel">
+        <div class="container">
+          <div class="footer__row"><a class="footer__logo" href="main.html"><img src="img/icons/logo.svg" width="183" height="34" alt="English School"></a>
+            <div class="social footer__social"><a class="social__link social__link--fb" href="https://facebook.com" target="_blank" title="Go to Facebook"></a><a class="social__link social__link--inst" href="https://instagram.com" target="_blank" title="Go to Instagram"></a><a class="social__link social__link--vk" href="https://vk.com" target="_blank" title="Go to VK"></a></div>
+            <div class="footer__copy"><a href="#">Политика конфиденциальности</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="lesson-test">
+      <div class="modal__item">
+        <button class="modal__close btn btn--reset btn--cross" data-close-modal></button>
+        <form class="modal__item-form form-test" action="/" method="/">
+          <div class="modal__item-body">
+            <div class="form-test__item">
+              <div class="modal__item-header">
+                <div class="modal__item-header-title">Вопрос 1</div>
+                <div class="progress__value">
+                  <div class="progress__value-bar">
+                    <div class="progress__value-bar-made" style="width:33.3%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__item-img--wrap"><img class="modal__item-img" src="img/content/modal-lesson.webp" width="566" height="300" alt="Название теста"></div>
+              <div class="form-test__group">
+                <div class="input">
+                  <input class="input__radio" id="lesson-test-1" type="radio" name="lesson-test">
+                  <label class="input__radio-label-bg" for="lesson-test-1">Слово</label>
+                </div>
+                <div class="input input--error">
+                  <input class="input__radio" id="lesson-test-2" type="radio" name="lesson-test">
+                  <label class="input__radio-label-bg" for="lesson-test-2">Слово</label>
+                </div>
+                <div class="input input--success">
+                  <input class="input__radio" id="lesson-test-3" type="radio" name="lesson-test">
+                  <label class="input__radio-label-bg" for="lesson-test-3">Слово</label>
+                </div>
+                <div class="input">
+                  <input class="input__radio" id="lesson-test-4" type="radio" name="lesson-test">
+                  <label class="input__radio-label-bg" for="lesson-test-4">Слово</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-test__control"><a class="btn btn--medium btn--border" href="#">Пропустить</a><a class="btn btn--medium btn--accent" href="#">Далее</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
